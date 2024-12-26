@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Login/Signup Pages */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* Dashboard Cards */
+.card-body {
+    padding: 1.5rem;
+}
+
+.bg-primary, .bg-success, .bg-danger {
+    transition: transform 0.2s;
+}
+
+.bg-primary:hover, .bg-success:hover, .bg-danger:hover {
+    transform: translateY(-5px);
+}
+
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    border-top: none;
+    background-color: #f8f9fa;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Forms */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}

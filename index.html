@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Personal Finance Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add animation styles */
+        .welcome-message {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0d6efd;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInMoveDown 1.5s ease forwards;
+        }
+
+        @keyframes fadeInMoveDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6 col-lg-4">
+                <!-- Welcome Message -->
+                <div class="welcome-message">Welcome to Finance Manager Website</div>
+                <!-- Login Form -->
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4">Login</h2>
+                        <form id="loginForm" onsubmit="return handleLogin(event)">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                        <p class="text-center mt-3">
+                            Don't have an account? <a href="signup.html">Sign up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
